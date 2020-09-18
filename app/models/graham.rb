@@ -1,0 +1,2 @@
+class Graham < ApplicationRecord
+end
