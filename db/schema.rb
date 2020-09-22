@@ -24,7 +24,10 @@ ActiveRecord::Schema.define(version: 2020_09_18_042507) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password"
-    t.boolean "progress"
+    t.boolean "tutorial", default: false
+    t.boolean "caseOne", default: false
+    t.boolean "caseTwo", default: false
+    t.boolean "caseThree", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
