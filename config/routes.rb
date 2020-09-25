@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :graham_cases
+  resources :graham_mains
+  resources :graham_tutorials
   namespace :api do
     namespace :v1 do
       resources :users, :grahams
