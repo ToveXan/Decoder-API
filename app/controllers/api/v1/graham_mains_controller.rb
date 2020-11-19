@@ -1,4 +1,4 @@
-class GrahamMainsController < ApplicationController
+class Api::V1::GrahamMainsController < ApplicationController
   before_action :set_graham_main, only: [:show, :update, :destroy]
 
   # GET /graham_mains

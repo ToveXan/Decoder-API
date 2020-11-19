@@ -1,4 +1,4 @@
-class GrahamTutorialsController < ApplicationController
+class Api::V1::GrahamTutorialsController < ApplicationController
   before_action :set_graham_tutorial, only: [:show, :update, :destroy]
 
   # GET /graham_tutorials

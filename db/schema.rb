@@ -10,34 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_175813) do
+ActiveRecord::Schema.define(version: 2020_09_30_123235) do
 
-  create_table "graham_cases", force: :cascade do |t|
-    t.string "one"
-    t.string "two"
-    t.string "three"
-    t.string "four"
-    t.string "five"
+  create_table "graham_mains", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "graham_mains", force: :cascade do |t|
-    t.string "one"
-    t.string "two"
-    t.string "three"
-    t.string "four"
-    t.string "five"
+  create_table "graham_ones", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "graham_threes", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "graham_tutorials", force: :cascade do |t|
-    t.string "one"
-    t.string "two"
-    t.string "three"
-    t.string "four"
-    t.string "five"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "graham_twos", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
